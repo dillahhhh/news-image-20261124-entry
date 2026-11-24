@@ -1,0 +1,285 @@
+{
+ "briefs": [
+  {
+   "deck": "Amnesty ends the 2017 case.",
+   "headline": "Spain's top court amnesties Puigdemont",
+   "pin": 10,
+   "place": "MADRID, SPAIN",
+   "source": "OneTurn",
+   "status": "REPORTED"
+  },
+  {
+   "deck": "Rewards for tips that end in guilty verdicts.",
+   "headline": "S. Korea pays up to $375,000 to catch AI exam cheats",
+   "pin": 11,
+   "place": "SEOUL, SOUTH KOREA",
+   "source": "Wall Street Journal",
+   "status": "REPORTED"
+  },
+  {
+   "deck": "Fighting traps hospital emergency teams.",
+   "headline": "Fighting traps Ebola responders in DR Congo",
+   "pin": 12,
+   "place": "ITURI, DR CONGO",
+   "source": "UN News / WHO",
+   "status": "REPORTED"
+  },
+  {
+   "deck": "Aid to continue 'for two more years'.",
+   "headline": "Huckabee doubts US will end Israel aid this year",
+   "pin": 13,
+   "place": "WASHINGTON, USA",
+   "source": "Reuters",
+   "status": "REPORTED"
+  }
+ ],
+ "date_check": [
+  "COP31 climate talks collapsed Sun 22 Nov in Antalya — no deal on fossil fuels.",
+  "Ukraine's sinking of the Russian corvette Merkury off Libya — attack Sun 22 Nov, Kyiv confirmed Mon 23 Nov.",
+  "CrowdStrike's $43.9bn deal for Zscaler — announced Mon 23 Nov.",
+  "Nvidia's rally (+31.5%) is Monday 23 Nov's US close, reported worldwide on Tue 24 Nov."
+ ],
+ "day": "Tuesday 24 November 2026",
+ "footer_sources": "Sources: Reuters · Associated Press · WSJ · Zacks · UN News / WHO · OneTurn — all stories 24 Nov 2026 (UTC).",
+ "heroes": [
+  {
+   "deck": "Naeem Abu Nahel dies in a strike in western Gaza City; six others are killed, two of them police officers, medics say.",
+   "headline": "Israeli strikes kill Hamas security chief in Gaza",
+   "kicker": "ISRAEL–HAMAS WAR",
+   "pin": 1,
+   "place": "GAZA CITY, GAZA",
+   "source": "Reuters",
+   "status": "REPORTED"
+  },
+  {
+   "deck": "An apartment block is hit; four children are among the wounded, the governor says.",
+   "headline": "Overnight strike on Zaporizhzhia kills 2, wounds 40",
+   "kicker": "RUSSIA–UKRAINE WAR",
+   "pin": 2,
+   "place": "ZAPORIZHZHIA, UKRAINE",
+   "source": "Reuters",
+   "status": "REPORTED"
+  },
+  {
+   "deck": "Toll from Saturday's candy-factory fire confirmed Tuesday; eight still missing.",
+   "headline": "Banten factory-fire toll confirmed at 26",
+   "kicker": "DISASTER",
+   "pin": 3,
+   "place": "SERANG, BANTEN, INDONESIA",
+   "source": "Associated Press",
+   "status": "REPORTED"
+  }
+ ],
+ "mains": [
+  {
+   "deck": "S&P 500 +4.7% to 7,237; Nasdaq +6.5%",
+   "headline": "Nvidia +31.5% powers Wall Street's best day since April",
+   "kicker": "MARKETS",
+   "pin": 4,
+   "place": "NEW YORK",
+   "source": "WSJ / Zacks",
+   "status": "REPORTED"
+  },
+  {
+   "deck": "Jets over waters between Korea and Japan",
+   "headline": "Russian jets enter South Korea's air defence zone",
+   "kicker": "DEFENCE",
+   "pin": 5,
+   "place": "SEOUL",
+   "source": "AP",
+   "status": "REPORTED"
+  },
+  {
+   "deck": "Oil ministry to run Kurdish-area fields",
+   "headline": "Baghdad moves to take over Kurdish oilfields",
+   "kicker": "POLITICS",
+   "pin": 6,
+   "place": "BAGHDAD",
+   "source": "Reuters",
+   "status": "REPORTED"
+  },
+  {
+   "deck": "Minister: she will return 'in handcuffs'",
+   "headline": "Hasina plans return to Bangladesh on 16 December",
+   "kicker": "POLITICS",
+   "pin": 7,
+   "place": "DHAKA",
+   "source": "Reuters",
+   "status": "REPORTED"
+  },
+  {
+   "deck": "2027 share by year-end, ahead of US sanctions",
+   "headline": "Japan to pay its full ICC contribution early",
+   "kicker": "JUSTICE",
+   "pin": 8,
+   "place": "TOKYO",
+   "source": "Reuters",
+   "status": "REPORTED"
+  },
+  {
+   "deck": "Rebels also accused of endangering civilians",
+   "headline": "Amnesty: Tigray strikes may be war crimes",
+   "kicker": "RIGHTS",
+   "pin": 9,
+   "place": "TIGRAY",
+   "source": "Reuters",
+   "status": "REPORTED"
+  }
+ ],
+ "masthead": "THE WORLD IN ONE DAY",
+ "pins": [
+  {
+   "lat": 31.5,
+   "lon": 34.5,
+   "n": 1,
+   "place": "Gaza City",
+   "dlon": 36.0,
+   "dlat": 30.0
+  },
+  {
+   "dlat": 56.0,
+   "dlon": 28.0,
+   "lat": 47.8,
+   "lon": 35.2,
+   "n": 2,
+   "place": "Zaporizhzhia"
+  },
+  {
+   "lat": -6.1,
+   "lon": 106.1,
+   "n": 3,
+   "place": "Serang, Banten"
+  },
+  {
+   "dlat": 42.0,
+   "dlon": -70.0,
+   "lat": 40.7,
+   "lon": -74.0,
+   "n": 4,
+   "place": "New York"
+  },
+  {
+   "dlat": 37.5,
+   "dlon": 124.0,
+   "lat": 37.5,
+   "lon": 127.0,
+   "n": 5,
+   "place": "Seoul"
+  },
+  {
+   "dlat": 33.0,
+   "dlon": 55.0,
+   "lat": 33.3,
+   "lon": 44.4,
+   "n": 6,
+   "place": "Baghdad"
+  },
+  {
+   "lat": 23.8,
+   "lon": 90.4,
+   "n": 7,
+   "place": "Dhaka"
+  },
+  {
+   "dlat": 35.7,
+   "dlon": 142.0,
+   "lat": 35.7,
+   "lon": 139.7,
+   "n": 8,
+   "place": "Tokyo"
+  },
+  {
+   "dlat": 12.0,
+   "dlon": 40.0,
+   "lat": 13.5,
+   "lon": 39.5,
+   "n": 9,
+   "place": "Tigray"
+  },
+  {
+   "lat": 40.4,
+   "lon": -3.7,
+   "n": 10,
+   "place": "Madrid"
+  },
+  {
+   "dlat": -2.0,
+   "dlon": 24.0,
+   "lat": 1.6,
+   "lon": 30.2,
+   "n": 11,
+   "place": "Ituri"
+  },
+  {
+   "dlat": 34.0,
+   "dlon": -84.0,
+   "lat": 38.9,
+   "lon": -77.0,
+   "n": 12,
+   "place": "Washington"
+  }
+ ],
+ "regions": [
+  {
+   "count": 5,
+   "name": "ASIA"
+  },
+  {
+   "count": 3,
+   "name": "MIDDLE EAST"
+  },
+  {
+   "count": 2,
+   "name": "EUROPE"
+  },
+  {
+   "count": 2,
+   "name": "AFRICA"
+  },
+  {
+   "count": 1,
+   "name": "N. AMERICA"
+  }
+ ],
+ "stats": [
+  {
+   "label": "DEAD — Banten factory-fire toll confirmed Tue (AP)",
+   "value": "26"
+  },
+  {
+   "label": "WOUNDED — Zaporizhzhia strike, incl. 4 children (Reuters)",
+   "value": "40"
+  },
+  {
+   "label": "KILLED — Gaza strikes, incl. Hamas security chief (Reuters)",
+   "value": "7"
+  },
+  {
+   "label": "NVIDIA SHARES — Mon close, reported worldwide Tue (WSJ)",
+   "value": "+31.5%"
+  }
+ ],
+ "story_total": 13,
+ "timeline": [
+  {
+   "text": "Russian strike hits a Zaporizhzhia apartment block",
+   "when": "OVERNIGHT"
+  },
+  {
+   "text": "Banten fire toll confirmed at 26; Russian jets enter Korea's ADIZ",
+   "when": "MORNING"
+  },
+  {
+   "text": "Israeli strikes kill Hamas security chief Abu Nahel in Gaza",
+   "when": "MIDDAY"
+  },
+  {
+   "text": "Baghdad orders takeover of Kurdish oilfields",
+   "when": "AFTERNOON"
+  },
+  {
+   "text": "Hasina announces 16 Dec return; Japan pledges early ICC payment",
+   "when": "EVENING"
+  }
+ ]
+}
