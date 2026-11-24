@@ -11,7 +11,7 @@
   {
    "deck": "Rewards for tips that end in guilty verdicts.",
    "headline": "S. Korea pays up to $375,000 to catch AI exam cheats",
-   "pin": 11,
+   "pin": 5,
    "place": "SEOUL, SOUTH KOREA",
    "source": "Wall Street Journal",
    "status": "REPORTED"
@@ -19,28 +19,27 @@
   {
    "deck": "Fighting traps hospital emergency teams.",
    "headline": "Fighting traps Ebola responders in DR Congo",
-   "pin": 12,
+   "pin": 11,
    "place": "ITURI, DR CONGO",
    "source": "UN News / WHO",
    "status": "REPORTED"
   },
   {
-   "deck": "Aid to continue 'for two more years'.",
-   "headline": "Huckabee doubts US will end Israel aid this year",
-   "pin": 13,
+   "deck": "MoU 'to continue for two more years'.",
+   "headline": "Huckabee doubts US will end military aid to Israel this year",
+   "pin": 12,
    "place": "WASHINGTON, USA",
    "source": "Reuters",
    "status": "REPORTED"
   }
  ],
  "date_check": [
-  "COP31 climate talks collapsed Sun 22 Nov in Antalya — no deal on fossil fuels.",
-  "Ukraine's sinking of the Russian corvette Merkury off Libya — attack Sun 22 Nov, Kyiv confirmed Mon 23 Nov.",
-  "CrowdStrike's $43.9bn deal for Zscaler — announced Mon 23 Nov.",
-  "Nvidia's rally (+31.5%) is Monday 23 Nov's US close, reported worldwide on Tue 24 Nov."
+  "COP31 talks collapsed Sun 22 Nov in Antalya — no fossil-fuel deal.",
+  "Ukraine sank Russian corvette Merkury off Libya Sun 22 Nov; Kyiv confirmed Mon 23 Nov.",
+  "CrowdStrike's $43.9bn deal for Zscaler — announced Mon 23 Nov."
  ],
  "day": "Tuesday 24 November 2026",
- "footer_sources": "Sources: Reuters · Associated Press · WSJ · Zacks · UN News / WHO · OneTurn — all stories 24 Nov 2026 (UTC).",
+ "footer_sources": "Sources: Reuters · Associated Press · WSJ · Zacks · UN News / WHO · OneTurn — all stories reported 24 Nov 2026 (UTC); market closes Mon 23 Nov.",
  "heroes": [
   {
    "deck": "Naeem Abu Nahel dies in a strike in western Gaza City; six others are killed, two of them police officers, medics say.",
@@ -72,8 +71,8 @@
  ],
  "mains": [
   {
-   "deck": "S&P 500 +4.7% to 7,237; Nasdaq +6.5%",
-   "headline": "Nvidia +31.5% powers Wall Street's best day since April",
+   "deck": "S&P 500 +4.7% to 7,237; Nasdaq +6.5% (Mon closes)",
+   "headline": "Nvidia +31.5% powers Wall Street's best day since April 2025",
    "kicker": "MARKETS",
    "pin": 4,
    "place": "NEW YORK",
@@ -278,7 +277,7 @@
    "when": "AFTERNOON"
   },
   {
-   "text": "Hasina announces 16 Dec return; Japan pledges early ICC payment",
+   "text": "Hasina announces 16 Dec return; Japan pays ICC early",
    "when": "EVENING"
   }
  ]

@@ -12,12 +12,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 W, H = 1024, 1024
 
 PAPER = (248, 244, 233)
-INK = (22, 19, 14)
+INK = (17, 17, 17)
 RED = (179, 38, 30)
 NAVY = (20, 50, 79)
 NAVY_D = (13, 36, 58)
 GOLD = (185, 138, 29)
-SLATE = (90, 86, 76)
+SLATE = (74, 70, 62)
 LINE = (201, 191, 166)
 SEA = (188, 211, 228)
 LAND = (231, 220, 192)
@@ -212,8 +212,10 @@ def draw_map(draw, x, y, w, h, pins):
         if "bx" in p and "by" in p:
             bx, by = px + p["bx"], py + p["by"]
             draw.line([(px, py), (bx, by)], fill=RED, width=1)
-            draw.ellipse([px - 6, py - 6, px + 6, py + 6], fill=(255, 255, 255))
-            draw.ellipse([px - 5, py - 5, px + 5, py + 5], fill=RED)
+            # small true-spot dot (not a second pin): kept tiny so at
+            # thumbnail size only the 12 numbered badges read as pins
+            draw.ellipse([px - 5, py - 5, px + 5, py + 5], fill=(255, 255, 255))
+            draw.ellipse([px - 4, py - 4, px + 4, py + 4], fill=RED)
             draw.ellipse([bx - 10, by - 10, bx + 10, by + 10], fill=(255, 255, 255))
             draw.ellipse([bx - 8, by - 8, bx + 8, by + 8], fill=RED)
             tw = draw.textlength(str(p["n"]), font=f)
@@ -281,7 +283,7 @@ def main():
     yy = text_block(dr, hx + 12, yy, hero["headline"], f_h1, INK, hw - 24, leading=30)
     yy += 4
     f_deck = font(F_SANS, 13)
-    yy = text_block(dr, hx + 12, yy, hero["deck"], f_deck, (40, 36, 30), hw - 24, leading=16)
+    yy = text_block(dr, hx + 12, yy, hero["deck"], f_deck, (30, 28, 25), hw - 24, leading=16)
     f_src = font(F_SANS, 11)
     dr.text((hx + 12, hy + hh - 18), "REPORTED  ·  Source: " + hero["source"], font=f_src, fill=SLATE)
 
@@ -297,7 +299,7 @@ def main():
         dr.text((tx, y0 + 8), h2["kicker"], font=f_kick, fill=RED)
         f_h2 = font(F_SANS_B, 16)
         y1 = text_block(dr, tx, y0 + 24, h2["headline"], f_h2, INK, rw - 90, leading=19)
-        y1 = text_block(dr, tx, y1 + 2, h2["deck"], f_deck, (40, 36, 30), rw - 90, leading=16)
+        y1 = text_block(dr, tx, y1 + 2, h2["deck"], f_deck, (30, 28, 25), rw - 90, leading=16)
         dr.text((tx, y0 + rh - 16), h2["place"] + "  ·  " + h2["source"], font=f_src, fill=SLATE)
 
     # ---------- map panel ----------
@@ -339,7 +341,7 @@ def main():
         ly += 10
 
     # ---------- timeline ----------
-    ty, th = 658, 66
+    ty, th = 658, 68
     dr.rectangle([MX, ty, RX, ty + th], fill=PANEL, outline=INK, width=1)
     dr.text((MX + 12, ty + 6), "THE DAY IN ORDER — AS THE NEWS BROKE (UTC)", font=f_sec, fill=INK)
     tl = d["timeline"]
@@ -359,7 +361,7 @@ def main():
     dr.text((MX, gy), "MORE OF THE DAY", font=f_sec, fill=INK)
     mains = d["mains"]
     cw3 = (RX - MX - 24) / 3
-    f_mh = font(F_SANS_B, 14)
+    f_mh = font(F_SANS_B, 15)
     f_md = font(F_SANS, 11)
     for i, m in enumerate(mains):
         col, row = i % 3, i // 3
@@ -369,7 +371,7 @@ def main():
             dr.line([(x0 - 6, y0), (x0 - 6, y0 + 54)], fill=LINE, width=1)
         dr.text((x0, y0), m["kicker"] + "  ·  " + m["place"] + "  ·  " + m["source"], font=f_kick, fill=RED)
         y1 = text_block(dr, x0, y0 + 15, m["headline"], f_mh, INK, cw3, leading=16)
-        text_block(dr, x0, y1 + 1, m["deck"], f_md, (40, 36, 30), cw3, leading=13)
+        text_block(dr, x0, y1 + 1, m["deck"], f_md, (30, 28, 25), cw3, leading=13)
 
     # ---------- briefs strip ----------
     by = 876
@@ -382,8 +384,8 @@ def main():
         x0 = MX + i * (bw4 + 12)
         if i:
             dr.line([(x0 - 6, by + 6), (x0 - 6, by + 52)], fill=LINE, width=1)
-        y1 = text_block(dr, x0, by + 22, b["headline"], f_bh, INK, bw4, leading=14)
-        text_block(dr, x0, y1, b["deck"], f_bd, (40, 36, 30), bw4, leading=13)
+        y1 = text_block(dr, x0, by + 20, b["headline"], f_bh, INK, bw4, leading=13)
+        text_block(dr, x0, y1, b["deck"], f_bd, (30, 28, 25), bw4, leading=12)
 
     # ---------- date check + footer ----------
     dy = 940
@@ -393,7 +395,7 @@ def main():
     yy = dy + 24
     for line in d["date_check"]:
         dr.text((MX + 12, yy), "✕  " + line, font=f_dc, fill=INK)
-        yy += 11
+        yy += 13
     f_foot = font(F_SANS, 9)
     text_block(dr, MX + 12, yy + 2, d["footer_sources"], f_foot, SLATE, RX - MX - 24, leading=11)
 
