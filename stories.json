@@ -133,16 +133,16 @@
    "lon": 34.5,
    "n": 1,
    "place": "Gaza City",
-   "dlon": 36.0,
-   "dlat": 30.0
+   "bx": -12,
+   "by": -10
   },
   {
-   "dlat": 56.0,
-   "dlon": 28.0,
    "lat": 47.8,
    "lon": 35.2,
    "n": 2,
-   "place": "Zaporizhzhia"
+   "place": "Zaporizhzhia",
+   "bx": 2,
+   "by": -14
   },
   {
    "lat": -6.1,
@@ -151,28 +151,28 @@
    "place": "Serang, Banten"
   },
   {
-   "dlat": 42.0,
-   "dlon": -70.0,
    "lat": 40.7,
    "lon": -74.0,
    "n": 4,
-   "place": "New York"
+   "place": "New York",
+   "bx": 14,
+   "by": -8
   },
   {
-   "dlat": 37.5,
-   "dlon": 124.0,
    "lat": 37.5,
    "lon": 127.0,
    "n": 5,
-   "place": "Seoul"
+   "place": "Seoul",
+   "bx": 0,
+   "by": -13
   },
   {
-   "dlat": 33.0,
-   "dlon": 55.0,
    "lat": 33.3,
    "lon": 44.4,
    "n": 6,
-   "place": "Baghdad"
+   "place": "Baghdad",
+   "bx": 13,
+   "by": -9
   },
   {
    "lat": 23.8,
@@ -181,20 +181,20 @@
    "place": "Dhaka"
   },
   {
-   "dlat": 35.7,
-   "dlon": 142.0,
    "lat": 35.7,
    "lon": 139.7,
    "n": 8,
-   "place": "Tokyo"
+   "place": "Tokyo",
+   "bx": 12,
+   "by": 8
   },
   {
-   "dlat": 12.0,
-   "dlon": 40.0,
    "lat": 13.5,
    "lon": 39.5,
    "n": 9,
-   "place": "Tigray"
+   "place": "Tigray",
+   "bx": 10,
+   "by": -10
   },
   {
    "lat": 40.4,
@@ -203,29 +203,29 @@
    "place": "Madrid"
   },
   {
-   "dlat": -2.0,
-   "dlon": 24.0,
    "lat": 1.6,
    "lon": 30.2,
    "n": 11,
-   "place": "Ituri"
+   "place": "Ituri",
+   "bx": -12,
+   "by": 10
   },
   {
-   "dlat": 34.0,
-   "dlon": -84.0,
    "lat": 38.9,
    "lon": -77.0,
    "n": 12,
-   "place": "Washington"
+   "place": "Washington",
+   "bx": -14,
+   "by": 10
   }
  ],
  "regions": [
   {
-   "count": 5,
+   "count": 4,
    "name": "ASIA"
   },
   {
-   "count": 3,
+   "count": 2,
    "name": "MIDDLE EAST"
   },
   {
@@ -237,7 +237,7 @@
    "name": "AFRICA"
   },
   {
-   "count": 1,
+   "count": 2,
    "name": "N. AMERICA"
   }
  ],

@@ -204,12 +204,25 @@ def draw_map(draw, x, y, w, h, pins):
         ey = ry / 180.0 * h
         draw.ellipse([cx - ex, cy - ey, cx + ex, cy + ey], fill=LAND, outline=LAND_LINE)
     for p in pins:
-        px, py = lonlat_to_xy(p.get("dlon", p["lon"]), p.get("dlat", p["lat"]), x, y, w, h)
-        draw.ellipse([px - 11, py - 11, px + 11, py + 11], fill=(255, 255, 255))
-        draw.ellipse([px - 9, py - 9, px + 9, py + 9], fill=RED)
+        px, py = lonlat_to_xy(p["lon"], p["lat"], x, y, w, h)
+        # dot always on the true spot; the number badge may sit offset,
+        # joined to its dot by a leader line, so close pins stay readable
+        # without lying about where they are.
         f = font(F_SANS_B, 11)
-        tw = draw.textlength(str(p["n"]), font=f)
-        draw.text((px - tw / 2, py - 7), str(p["n"]), font=f, fill=(255, 255, 255))
+        if "bx" in p and "by" in p:
+            bx, by = px + p["bx"], py + p["by"]
+            draw.line([(px, py), (bx, by)], fill=RED, width=1)
+            draw.ellipse([px - 6, py - 6, px + 6, py + 6], fill=(255, 255, 255))
+            draw.ellipse([px - 5, py - 5, px + 5, py + 5], fill=RED)
+            draw.ellipse([bx - 10, by - 10, bx + 10, by + 10], fill=(255, 255, 255))
+            draw.ellipse([bx - 8, by - 8, bx + 8, by + 8], fill=RED)
+            tw = draw.textlength(str(p["n"]), font=f)
+            draw.text((bx - tw / 2, by - 7), str(p["n"]), font=f, fill=(255, 255, 255))
+        else:
+            draw.ellipse([px - 11, py - 11, px + 11, py + 11], fill=(255, 255, 255))
+            draw.ellipse([px - 9, py - 9, px + 9, py + 9], fill=RED)
+            tw = draw.textlength(str(p["n"]), font=f)
+            draw.text((px - tw / 2, py - 7), str(p["n"]), font=f, fill=(255, 255, 255))
 
 
 def main():
@@ -332,7 +345,7 @@ def main():
     tl = d["timeline"]
     tw5 = (RX - MX - 24) / 5
     f_when = font(F_SANS_B, 11)
-    f_tl = font(F_SANS, 10)
+    f_tl = font(F_SANS, 11)
     lx0 = MX + 12
     dr.line([(lx0 + 4, ty + 32), (RX - 12, ty + 32)], fill=LINE, width=2)
     for i, item in enumerate(tl):
